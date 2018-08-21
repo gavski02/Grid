@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css?family=Nova+Mono');
+
+h1{
+  text-align: center;
+  font-family: 'Nova Mono', monospace;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+::-webkit-input-placeholder{
+  color: #0099ff;
+}
+
+.buttons{
+  display: grid;
+  margin: 0 auto;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  text-align: center;
+  max-width: 350px;
+}
+
+a{
+  text-decoration: none;
+  outline: none;
+  font-family: 'Nova Mono', monospace;
+  font-size: 22px;
+  font-weight: 500;
+
+  margin: 0 auto;
+  margin-bottom: 20px;
+  width: 100px;
+  padding: 10px;
+
+  background-color: white;
+  color: #0099ff;
+  border: 5px solid #0099ff;
+  border-radius: 20px;
+  transition: 370ms;
+}
+
+a:hover{
+  background-color: #0099ff;
+  color: white;
+}
+
+.input{
+  width: 80px;
+  height: 45px;
+  margin-top: 6px;
+
+  outline: none;
+  background: white;
+  color: #0099ff;
+  font-size: 26px;
+  text-align: center;
+  border: 0;
+  font-family: 'Nova Mono', monospace;
+}
+
+.grid {
+	margin: 0 auto;
+	width: 720px;
+	height: 720px;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+}
+
+.row {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	flex: 1 1 auto;
+}
+
+.cell{
+  background: white;
+	flex: 1 1 auto;
+	border: 1px solid black;
+}
